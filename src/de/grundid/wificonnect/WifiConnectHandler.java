@@ -95,7 +95,7 @@ public class WifiConnectHandler extends Activity {
 		boolean foundAKnownNetwork = false;
 		List<WifiConfiguration> configuredNetworks = wifiManager.getConfiguredNetworks();
 		for (WifiConfiguration wifiConfiguration : configuredNetworks) {
-			if (wifiConfiguration.SSID.equals(wifiInfo.getSsid())) {
+			if (wifiConfiguration.SSID.equals("\"" + wifiInfo.getSsid() + "\"")) {
 				foundAKnownNetwork = true;
 				boolean result = wifiManager.enableNetwork(wifiConfiguration.networkId, true);
 				if (result) {
