@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wifi NFC Connect</string>
+    <string name="nfc_write_ok">NFC Tag successfully written</string>
+    <string name="nfc_write_not_ok">Cannot write NFC Tag</string>
+    <string name="nfc_write_message">Please touch the NFC Tag now.</string>
+    <string name="nfc_not_enough_space">Not enough space on tag.</string>
+    <string name="introduction">You can use this app to create a WPA config on a NFC tag. Please note that the WPA key will be stored as clear text.\n\nHowever you can use the linux tool wpa_passphrase and encode your WPA key. Then enter all the 64 characters as your WPA key and you will get an NFC tag with encrypted WPA key.</string>
+
+</resources>
